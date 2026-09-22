@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/sections/Hero";
+import PhotoWheel from "./components/sections/PhotoWheel";
 import BrandMarquee from "./components/sections/BrandMarquee";
 import FeaturedPerfumes from "./components/sections/FeaturedPerfumes";
 import Collections from "./components/sections/Collections";
@@ -147,9 +148,11 @@ function App() {
 
       <Hero />
 
-      <BrandMarquee />
+      <PhotoWheel />
 
       <Collections />
+
+      <BrandMarquee />
 
       <FeaturedPerfumes
         onAddToCart={addToCart}
